@@ -10,7 +10,7 @@ Logic Diagram :
 Logic Gates:
 
 VERILOG CODE:
-
+```
  module gate(a,b,w1,w2,w3,w4,w5,w6,w7);
       input a,b;
       output w1,w2,w3,w4,w5,w6,w7;
@@ -22,7 +22,7 @@ VERILOG CODE:
       nand g6 (w6,a,b);
       nor g7 (w7,a,b);
       endmodule
-
+```
 OUTPUT:
 <img width="960" alt="allgates" src="https://github.com/Vaishnavi6825/VLSI-LAB-EXP-1/assets/131337024/8d728df6-4d86-45e9-8df3-57deee5f146a">
 
@@ -33,14 +33,14 @@ OUTPUT:
 Half Adder:
 
 Verilog Code:
-
+```
      module halfadder( a,b,sum,carry);
      input a,b;
      output sum,carry;
      xor g1(sum,a,b);
      and g2(carry,a,b);
      endmodule
-
+```
 OUTPUT:
 <img width="960" alt="half adder" src="https://github.com/Vaishnavi6825/VLSI-LAB-EXP-1/assets/131337024/e7bc29e1-0f27-454f-af59-33b19c4ea519">
 
@@ -51,7 +51,7 @@ OUTPUT:
 Full adder:
 
 Verilog Code:
-
+```
  module fulladder(a,b,cin,sum,carry);
        input a,b,cin;
        output sum,carry;
@@ -63,7 +63,7 @@ Verilog Code:
        or g5(carry,w2,w3);
        endmodule
 
-
+```
 OUTPUT:
 <img width="960" alt="fulladder" src="https://github.com/Vaishnavi6825/VLSI-LAB-EXP-1/assets/131337024/9de72619-cf94-42e6-92cc-66cd9f3c390e">
 
@@ -74,7 +74,7 @@ OUTPUT:
 Half Subtractor:
 
 Verilog code:
-
+```
        module hs(a,b,difference,borrow);
        input a,b;
        output difference,borrow;
@@ -83,7 +83,7 @@ Verilog code:
        and g2(borrow,w,b);
        not g3(w,a);
        endmodule
-
+```
 OUTPUT:
 <img width="960" alt="halfsubtractor" src="https://github.com/Vaishnavi6825/VLSI-LAB-EXP-1/assets/131337024/0ecea1ce-5630-4b7e-bf12-41b6a827398f">
 
@@ -95,7 +95,7 @@ OUTPUT:
 Full Subtractor:
 
 Verilog Code:
-
+```
  module fs(a,b,c,diff,borrow);
     input a,b,c;
     output diff,borrow;
@@ -108,7 +108,7 @@ Verilog Code:
     not g6(w4,w3);
     nor g7(borrow,w5,w2);
 endmodule
-
+```
 OUTPUT:
 <img width="960" alt="full subtracter" src="https://github.com/Vaishnavi6825/VLSI-LAB-EXP-1/assets/131337024/46913f7e-ee51-4677-b47d-a545c9cb1555">
 
@@ -120,7 +120,7 @@ OUTPUT:
 8 Bit Ripple Carry Adder
 
 Verilog Code:
-
+```
 module fa(a,b,cin,sum,carry);
        input a,b,cin;
        output sum,carry;
@@ -131,7 +131,7 @@ module fa(a,b,cin,sum,carry);
        and g4(w2,w1,cin);
        or g5(carry,w2,w3);
  endmodule
- 
+``` 
  module rca(a,b,cin,sum,cout);
         input[3:0]a,b;
         input cin;
